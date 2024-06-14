@@ -6,7 +6,18 @@
 //   => ['a']
 //   commonStrings(['zoo', 'space', 'zoo'], ['zoo', 'space', 'boat']);
 //   => ['zoo', 'space']
-function commonStrings(array1, array2) {}
+
+function commonStrings(array1, array2) {
+  let newArray = []
+  for(let i = 0; i < array1.length; i++)
+    {
+      if(array1[i] === array2[i]){
+        newArray.push(array1[i])
+      }
+    }
+  return newArray
+}
+
 
 // Given three numbers, return a list of numbers from 1 to 100 that are
 // divisible by at least one of a, b or c.
